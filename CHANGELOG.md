@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 This project uses version-style milestones to track progress over time.
 
+## [1.0.0] Ubuntu Server Foundation
+
+### Added
+
+- Installed Ubuntu Server 26.04 LTS on the Lenovo ThinkPad T530
+- Set server hostname to atlas
+- Created administrative user kevin
+- Connected atlas to the home Wi-Fi network
+- Verified local login after installation
+- Verified remote SSH access from the Windows workstation
+- Captured baseline system information
+- Documented OS version, kernel, memory, storage, network, and SSH status
+- Completed initial system package updates
+
+### Notes
+
+This milestone marks the first operational version of atlas.
+
+The ThinkPad T530 has been successfully repurposed into a headless Ubuntu Server for the Cloud Operations Homelab project.
+
+Remote administration over SSH is working.
+
 ######
 
 ## [0.2.0] Ubuntu Server Installation Planning

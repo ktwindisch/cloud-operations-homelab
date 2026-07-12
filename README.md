@@ -1,7 +1,7 @@
 # Cloud Operations Homelab
 
-**Status:** Planning  
-**Current Phase:** Phase 0: Project Foundation  
+**Status:** Active  
+**Current Phase:** Phase 1 Complete: Ubuntu Server Foundation  
 **Primary Hardware:** Lenovo ThinkPad T530  
 **Primary Goal:** Build a production-inspired Linux server environment for Cloud and DevOps engineering practice.
 
@@ -68,3 +68,102 @@ Windows Workstation
         v
 Lenovo ThinkPad T530
 Ubuntu Server
+
+```
+
+As the project grows, the architecture will expand to include Docker, monitoring, automation, AWS, Terraform, CI/CD, and Ansible.
+
+## Roadmap
+
+| Phase | Focus | Status |
+|------|-------|--------|
+| Phase 0 | Project Foundation | Complete |
+| Phase 1 | Ubuntu Server Installation | Complete |
+| Phase 2 | SSH Remote Administration | Next |
+| Phase 3 | Bash Automation | Not Started |
+| Phase 4 | Docker Services | Not Started |
+| Phase 5 | Monitoring and Observability | Not Started |
+| Phase 6 | Terraform and AWS | Not Started |
+| Phase 7 | GitHub Actions CI/CD | Not Started |
+| Phase 8 | Ansible Configuration Management | Not Started |
+| Phase 9 | Kubernetes Expansion | Future |
+
+## Current System State
+
+| Item | Value |
+|------|-------|
+| Server Name | atlas |
+| Operating System | Ubuntu Server 26.04 LTS |
+| Access Method | SSH from Windows workstation |
+| Primary User | kevin |
+| Initial IPv4 Address | 192.168.1.191 |
+| SSH Status | Active and verified |
+| System Updates | Completed |
+| Current Milestone | Phase 1 Complete |
+
+## Repository Structure
+
+```text
+cloud-operations-homelab/
+|
+├── README.md
+├── CHANGELOG.md
+├── .gitignore
+|
+├── architecture/
+|   ├── adr/
+|   └── diagrams/
+|
+├── docs/
+|   ├── phase-00-planning/
+|   └── phase-01-linux-foundation/
+|
+├── screenshots/
+└── assets/
+```
+
+## Documentation
+
+Project documentation is organized by phase.
+
+### Phase 0: Planning
+
+- Hardware baseline
+- Server identity plan
+- Backup checklist
+- Ubuntu Server installation plan
+- Network plan
+
+### Phase 1: Linux Foundation
+
+- Ubuntu Server installation results
+- First login verification
+- Remote SSH verification
+- Baseline system information
+
+## Documentation Philosophy
+
+This repository documents more than finished results.
+
+Each phase includes:
+
+- What was built
+- Why it was built
+- Commands used
+- Configuration decisions
+- Problems encountered
+- Troubleshooting steps
+- Lessons learned
+- Future improvements
+
+The goal is not to appear perfect. The goal is to demonstrate growth as an engineer.
+
+## Current Status
+
+Phase 1 is complete.
+
+atlas is now running Ubuntu Server and can be administered remotely from the Windows workstation using SSH.
+
+Next phase:
+
+Phase 2: SSH Remote Administration
