@@ -1,7 +1,7 @@
 # Cloud Operations Homelab
 
 **Status:** Active  
-**Current Phase:** Phase 1 Complete: Ubuntu Server Foundation  
+**Current Phase:** Phase 2 Complete: SSH Remote Administration    
 **Primary Hardware:** Lenovo ThinkPad T530  
 **Primary Goal:** Build a production-inspired Linux server environment for Cloud and DevOps engineering practice.
 
@@ -79,8 +79,8 @@ As the project grows, the architecture will expand to include Docker, monitoring
 |------|-------|--------|
 | Phase 0 | Project Foundation | Complete |
 | Phase 1 | Ubuntu Server Installation | Complete |
-| Phase 2 | SSH Remote Administration | Next |
-| Phase 3 | Bash Automation | Not Started |
+| Phase 2 | SSH Remote Administration | Complete |
+| Phase 3 | Bash Automation | Next |
 | Phase 4 | Docker Services | Not Started |
 | Phase 5 | Monitoring and Observability | Not Started |
 | Phase 6 | Terraform and AWS | Not Started |
@@ -141,6 +141,13 @@ Project documentation is organized by phase.
 - Remote SSH verification
 - Baseline system information
 
+### Phase 2: SSH Remote Administration
+
+- SSH key setup
+- SSH config alias
+- SCP file transfer verification
+- SSH hardening notes
+
 ## Documentation Philosophy
 
 This repository documents more than finished results.
@@ -160,10 +167,12 @@ The goal is not to appear perfect. The goal is to demonstrate growth as an engin
 
 ## Current Status
 
-Phase 1 is complete.
+Phase 2 is complete.
 
-atlas is now running Ubuntu Server and can be administered remotely from the Windows workstation using SSH.
+atlas is running Ubuntu Server and can be administered remotely from the Windows workstation using key-based SSH authentication.
+
+Remote access has been simplified with the `ssh atlas` alias.
 
 Next phase:
 
-Phase 2: SSH Remote Administration
+Phase 3: Bash Automation

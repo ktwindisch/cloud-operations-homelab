@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 This project uses version-style milestones to track progress over time.
 
+## [2.0.0] SSH Remote Administration
+
+### Added
+
+- Created dedicated SSH key pair for atlas
+- Copied public SSH key to atlas
+- Verified key-based SSH authentication
+- Created SSH config alias for atlas
+- Verified simplified SSH access using `ssh atlas`
+- Tested SCP file transfer from Windows workstation to atlas
+- Tested SCP file transfer from atlas to Windows workstation
+- Checked rsync availability on both systems
+- Documented rsync limitation on Windows Git Bash
+- Added SSH hardening notes and future security plan
+
+### Notes
+
+This milestone improves remote administration for atlas.
+
+The server can now be accessed from the Windows workstation using a dedicated SSH key and the simplified command `ssh atlas`.
+
+Password login remains enabled temporarily as a safety fallback until key-based access is verified across multiple sessions and future hardening steps are completed.
+
 ## [1.0.0] Ubuntu Server Foundation
 
 ### Added
