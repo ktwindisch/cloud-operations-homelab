@@ -10,7 +10,7 @@ Each script should have a clear purpose, a known location, and a documented stat
 
 | Script | Location | Purpose | Status |
 |--------|----------|---------|--------|
-| `system-health.sh` | `automation/system-health.sh` | Generate a basic system health report | Planned |
+| `system-health.sh` | `automation/system-health.sh` | Generate a basic system health report | Complete |
 | `disk-check.sh` | `automation/disk-check.sh` | Check disk usage against a threshold | Planned |
 | `memory-check.sh` | `automation/memory-check.sh` | Report memory usage and availability | Planned |
 | `system-update.sh` | `automation/system-update.sh` | Help run safe system updates | Planned |

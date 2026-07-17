@@ -10,7 +10,7 @@ The goal is not to create complex scripts immediately. The goal is to build prac
 
 | Script | Purpose | Status |
 |--------|---------|--------|
-| `system-health.sh` | Generate a basic system health report | Planned |
+| `system-health.sh` | Generate a basic system health report | Complete |
 | `disk-check.sh` | Check disk usage and report status | Planned |
 | `memory-check.sh` | Check memory usage and availability | Planned |
 | `system-update.sh` | Assist with safe system updates | Planned |
@@ -31,4 +31,4 @@ The scripts in this folder should be:
 
 Phase 3 automation structure has been created.
 
-Scripts have not been added yet.
+The first automation script, `system-health.sh`, has been created and tested on atlas.
