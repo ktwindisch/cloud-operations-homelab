@@ -1,0 +1,6 @@
+# Keep shell scripts using Linux line endings
+*.sh text eol=lf
+
+# Keep Markdown and text files normalized
+*.md text
+*.txt text
