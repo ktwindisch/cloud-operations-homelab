@@ -12,7 +12,7 @@ The goal is not to create complex scripts immediately. The goal is to build prac
 |--------|---------|--------|
 | `system-health.sh` | Generate a basic system health report | Complete |
 | `disk-check.sh` | Check disk usage and report status | Complete |
-| `memory-check.sh` | Check memory usage and availability | Planned |
+| `memory-check.sh` | Check memory usage and availability | Complete |
 | `system-update.sh` | Assist with safe system updates | Planned |
 | `backup-home.sh` | Create a simple timestamped backup | Planned |
 
