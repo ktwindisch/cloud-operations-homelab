@@ -13,7 +13,7 @@ Each script should have a clear purpose, a known location, and a documented stat
 | `system-health.sh` | `automation/system-health.sh` | Generate a basic system health report | Complete |
 | `disk-check.sh` | `automation/disk-check.sh` | Check disk usage against a threshold | Complete |
 | `memory-check.sh` | `automation/memory-check.sh` | Report memory usage and availability | Complete |
-| `system-update.sh` | `automation/system-update.sh` | Help run safe system updates | Planned |
+| `system-update.sh` | `automation/system-update.sh` | Help run safe system updates | Complete |
 | `backup-home.sh` | `automation/backup-home.sh` | Create a timestamped backup of selected files | Planned |
 
 ## Completion Criteria
