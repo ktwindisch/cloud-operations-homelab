@@ -14,7 +14,7 @@ The goal is not to create complex scripts immediately. The goal is to build prac
 | `disk-check.sh` | Check disk usage and report status | Complete |
 | `memory-check.sh` | Check memory usage and availability | Complete |
 | `system-update.sh` | Assist with safe system updates | Complete |
-| `backup-home.sh` | Create a simple timestamped backup | Planned |
+| `backup-home.sh` | Create a simple timestamped backup | Complete |
 
 ## Automation Goals
 

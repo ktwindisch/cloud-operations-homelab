@@ -14,7 +14,7 @@ Each script should have a clear purpose, a known location, and a documented stat
 | `disk-check.sh` | `automation/disk-check.sh` | Check disk usage against a threshold | Complete |
 | `memory-check.sh` | `automation/memory-check.sh` | Report memory usage and availability | Complete |
 | `system-update.sh` | `automation/system-update.sh` | Help run safe system updates | Complete |
-| `backup-home.sh` | `automation/backup-home.sh` | Create a timestamped backup of selected files | Planned |
+| `backup-home.sh` | `automation/backup-home.sh` | Create a timestamped backup of selected files | Complete |
 
 ## Completion Criteria
 
