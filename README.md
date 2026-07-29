@@ -1,8 +1,8 @@
 # Cloud Operations Homelab
 
-**Status:** Active  
-**Current Phase:** Phase 2 Complete: SSH Remote Administration    
-**Primary Hardware:** Lenovo ThinkPad T530  
+**Status:** Active
+**Current Phase:** Phase 3 Complete: Bash Automation
+**Primary Hardware:** Lenovo ThinkPad T530
 **Primary Goal:** Build a production-inspired Linux server environment for Cloud and DevOps engineering practice.
 
 ## Overview
@@ -80,8 +80,8 @@ As the project grows, the architecture will expand to include Docker, monitoring
 | Phase 0 | Project Foundation | Complete |
 | Phase 1 | Ubuntu Server Installation | Complete |
 | Phase 2 | SSH Remote Administration | Complete |
-| Phase 3 | Bash Automation | Next |
-| Phase 4 | Docker Services | Not Started |
+| Phase 3 | Bash Automation | Complete |
+| Phase 4 | Docker Services | Next |
 | Phase 5 | Monitoring and Observability | Not Started |
 | Phase 6 | Terraform and AWS | Not Started |
 | Phase 7 | GitHub Actions CI/CD | Not Started |
@@ -105,19 +105,25 @@ As the project grows, the architecture will expand to include Docker, monitoring
 
 ```text
 cloud-operations-homelab/
-|
 ├── README.md
 ├── CHANGELOG.md
+├── .gitattributes
 ├── .gitignore
-|
 ├── architecture/
-|   ├── adr/
-|   └── diagrams/
-|
+│   ├── adr/
+│   └── diagrams/
+├── automation/
+│   ├── README.md
+│   ├── system-health.sh
+│   ├── disk-check.sh
+│   ├── memory-check.sh
+│   ├── system-update.sh
+│   └── backup-home.sh
 ├── docs/
-|   ├── phase-00-planning/
-|   └── phase-01-linux-foundation/
-|
+│   ├── phase-00-planning/
+│   ├── phase-01-linux-foundation/
+│   ├── phase-02-ssh/
+│   └── phase-03-bash/
 ├── screenshots/
 └── assets/
 ```
@@ -148,6 +154,17 @@ Project documentation is organized by phase.
 - SCP file transfer verification
 - SSH hardening notes
 
+### Phase 3: Bash Automation
+
+- Bash automation overview
+- Script inventory
+- System health report script
+- Disk check script
+- Memory check script
+- System update helper script
+- Backup script
+- Phase 3 summary
+
 ## Documentation Philosophy
 
 This repository documents more than finished results.
@@ -167,12 +184,12 @@ The goal is not to appear perfect. The goal is to demonstrate growth as an engin
 
 ## Current Status
 
-Phase 2 is complete.
+## Current Status
 
-atlas is running Ubuntu Server and can be administered remotely from the Windows workstation using key-based SSH authentication.
+Phase 3 is complete.
 
-Remote access has been simplified with the `ssh atlas` alias.
+atlas now has reusable Bash automation scripts for basic operational tasks, including system health reporting, disk usage checks, memory checks, safe package update assistance, and timestamped backup creation.
 
 Next phase:
 
-Phase 3: Bash Automation
+Phase 4: Docker Services

@@ -4,6 +4,51 @@ All notable changes to this project will be documented in this file.
 
 This project uses version-style milestones to track progress over time.
 
+## [3.0.0] Bash Automation
+
+### Added
+
+- Created `automation/` folder for Bash scripts
+- Created Phase 3 Bash documentation folder
+- Added `system-health.sh` for basic server health reporting
+- Added `disk-check.sh` for root filesystem disk threshold checks
+- Added `memory-check.sh` for available memory threshold checks
+- Added `system-update.sh` for safe package update assistance
+- Added `backup-home.sh` for timestamped backup archive creation and verification
+- Added `.gitattributes` to keep shell scripts using Linux line endings
+- Added script documentation for each Phase 3 automation script
+- Added Phase 3 summary documentation
+
+### Tested
+
+- Verified `system-health.sh` on atlas
+- Verified `disk-check.sh` on atlas with an 80% disk usage threshold
+- Verified `memory-check.sh` on atlas with a 20% available memory threshold
+- Verified `system-update.sh` on atlas with confirmation prompts
+- Verified `backup-home.sh` on atlas with archive creation and verification
+
+### Fixed
+
+- Corrected a mistaken folder path typo involving `automnation` instead of `automation`
+- Resolved Git Bash and Windows line ending concerns with `.gitattributes`
+- Updated `system-update.sh` to use `PAGER=cat apt list --upgradable` so upgrade output prints without pausing in a pager
+
+### Notes
+
+Phase 3 moved the project from manual Linux administration toward repeatable operational automation.
+
+The scripts are intentionally small, readable, and focused on real server administration tasks.
+
+Completed scripts:
+
+- `system-health.sh`
+- `disk-check.sh`
+- `memory-check.sh`
+- `system-update.sh`
+- `backup-home.sh`
+
+Next phase: Docker Services.
+
 ## [2.0.0] SSH Remote Administration
 
 ### Added
