@@ -40,8 +40,8 @@ Those topics are planned for later phases.
 | Step | Task | Status |
 |------|------|--------|
 | 4.1 | Create Phase 4 folder structure and planning docs | In Progress |
-| 4.2 | Install Docker Engine and Docker Compose on atlas | Not Started |
-| 4.3 | Run first Docker test container | Not Started |
+| 4.2 | Install Docker Engine and Docker Compose on atlas | Complete |
+| 4.3 | Run first Docker test container | Complete |
 | 4.4 | Run Nginx container and test port access | Not Started |
 | 4.5 | Create custom Nginx static page | Not Started |
 | 4.6 | Convert Nginx service to Docker Compose | Not Started |
@@ -68,4 +68,8 @@ Phase 4 will be complete when:
 
 ## Current Status
 
-Phase 4 has started with folder and documentation planning.
+Docker Engine and Docker Compose have been installed and verified on atlas.
+
+The `hello-world` test container ran successfully.
+
+Next step: run an Nginx container and test port access from the Windows workstation.
