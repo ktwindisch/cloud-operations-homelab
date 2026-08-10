@@ -39,10 +39,10 @@ Those topics are planned for later phases.
 
 | Step | Task | Status |
 |------|------|--------|
-| 4.1 | Create Phase 4 folder structure and planning docs | In Progress |
+| 4.1 | Create Phase 4 folder structure and planning docs | Complete |
 | 4.2 | Install Docker Engine and Docker Compose on atlas | Complete |
 | 4.3 | Run first Docker test container | Complete |
-| 4.4 | Run Nginx container and test port access | Not Started |
+| 4.4 | Run Nginx container and test port access | Complete |
 | 4.5 | Create custom Nginx static page | Not Started |
 | 4.6 | Convert Nginx service to Docker Compose | Not Started |
 | 4.7 | Review logs and troubleshoot container behavior | Not Started |
@@ -72,4 +72,6 @@ Docker Engine and Docker Compose have been installed and verified on atlas.
 
 The `hello-world` test container ran successfully.
 
-Next step: run an Nginx container and test port access from the Windows workstation.
+An Nginx test container was started with Docker, exposed on port `8080`, and verified from both atlas and the Windows workstation.
+
+Next step: create a custom Nginx static page.
