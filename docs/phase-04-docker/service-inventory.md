@@ -12,7 +12,7 @@ Each service should have a clear purpose, known ports, a documented location, an
 |---------|----------|-----------|----------------|---------|--------|
 | Nginx test container | Manual Docker run | 8080 | 80 | Initial containerized web service test | Complete |
 | Nginx Compose service | `docker/nginx/docker-compose.yml` | 8080 | 80 | Repeatable Nginx service using Docker Compose | Planned |
-| Custom static page | `docker/nginx/html/index.html` | 8080 | 80 | Serve a homelab web page from Nginx | Planned |
+| Custom static page | `docker/nginx/html/index.html` | 8080 | 80 | Serve a homelab web page from Nginx | Complete |
 
 ## Completion Criteria
 

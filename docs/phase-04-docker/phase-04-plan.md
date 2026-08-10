@@ -43,7 +43,7 @@ Those topics are planned for later phases.
 | 4.2 | Install Docker Engine and Docker Compose on atlas | Complete |
 | 4.3 | Run first Docker test container | Complete |
 | 4.4 | Run Nginx container and test port access | Complete |
-| 4.5 | Create custom Nginx static page | Not Started |
+| 4.5 | Create custom Nginx static page | Complete |
 | 4.6 | Convert Nginx service to Docker Compose | Not Started |
 | 4.7 | Review logs and troubleshoot container behavior | Not Started |
 | 4.8 | Update README, CHANGELOG, and tag `v4.0.0` | Not Started |
@@ -74,4 +74,6 @@ The `hello-world` test container ran successfully.
 
 An Nginx test container was started with Docker, exposed on port `8080`, and verified from both atlas and the Windows workstation.
 
-Next step: create a custom Nginx static page.
+A custom Cloud Operations Homelab static page is now being served from Nginx in Docker.
+
+Next step: convert the Nginx service to Docker Compose.

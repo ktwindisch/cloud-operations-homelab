@@ -22,7 +22,7 @@ docker/
 | Service | Purpose | Status |
 |---------|---------|--------|
 | Nginx | Initial web service container test | Planned |
-| Custom Nginx static page | Serve a simple homelab web page | Planned |
+| Custom Nginx static page | Serve a simple homelab web page | Complete |
 | Docker Compose service | Manage the Nginx service using Compose | Planned |
 
 ## Phase 4 Goals
