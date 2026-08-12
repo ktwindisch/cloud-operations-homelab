@@ -23,7 +23,7 @@ docker/
 |---------|---------|--------|
 | Nginx | Initial web service container test | Planned |
 | Custom Nginx static page | Serve a simple homelab web page | Complete |
-| Docker Compose service | Manage the Nginx service using Compose | Planned |
+| Docker Compose service | Manage the Nginx service using Compose | Complete |
 
 ## Phase 4 Goals
 
@@ -47,3 +47,5 @@ Docker Engine and Docker Compose have been installed and verified on atlas.
 The `hello-world` container test completed successfully.
 
 No persistent Docker services have been deployed yet.
+
+Docker Compose is now being used to manage the custom Nginx service.
