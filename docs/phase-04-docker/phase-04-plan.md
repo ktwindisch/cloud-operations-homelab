@@ -45,7 +45,7 @@ Those topics are planned for later phases.
 | 4.4 | Run Nginx container and test port access | Complete |
 | 4.5 | Create custom Nginx static page | Complete |
 | 4.6 | Convert Nginx service to Docker Compose | Complete |
-| 4.7 | Review logs and troubleshoot container behavior | Not Started |
+| 4.7 | Review logs and troubleshoot container behavior | Complete |
 | 4.8 | Update README, CHANGELOG, and tag `v4.0.0` | Not Started |
 
 ## Success Criteria
@@ -78,4 +78,6 @@ A custom Cloud Operations Homelab static page is now being served from Nginx in 
 
 The Nginx service has been converted from a manual Docker run command to a repeatable Docker Compose service.
 
-Next step: document Compose operations and basic service management commands.
+Basic Docker Compose operations have been tested, including status checks, logs, restart, shutdown, recovery, and browser verification.
+
+Next step: document basic Docker troubleshooting and cleanup commands.
