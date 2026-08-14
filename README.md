@@ -1,7 +1,8 @@
 # Cloud Operations Homelab
 
 **Status:** Active
-**Current Phase:** Phase 3 Complete: Bash Automation
+**Current Phase:** Phase 4 Complete: Docker Services  
+**Next Phase:** Phase 5: Monitoring and Observability
 **Primary Hardware:** Lenovo ThinkPad T530
 **Primary Goal:** Build a production-inspired Linux server environment for Cloud and DevOps engineering practice.
 
@@ -81,8 +82,8 @@ As the project grows, the architecture will expand to include Docker, monitoring
 | Phase 1 | Ubuntu Server Installation | Complete |
 | Phase 2 | SSH Remote Administration | Complete |
 | Phase 3 | Bash Automation | Complete |
-| Phase 4 | Docker Services | Next |
-| Phase 5 | Monitoring and Observability | Not Started |
+| Phase 4 | Docker Services | Complete |
+| Phase 5 | Monitoring and Observability | Next |
 | Phase 6 | Terraform and AWS | Not Started |
 | Phase 7 | GitHub Actions CI/CD | Not Started |
 | Phase 8 | Ansible Configuration Management | Not Started |
@@ -182,14 +183,10 @@ Each phase includes:
 
 The goal is not to appear perfect. The goal is to demonstrate growth as an engineer.
 
-## Current Status
+## Current Project Status
 
-## Current Status
+Phase 4: Docker Services is complete.
 
-Phase 3 is complete.
+The homelab now includes a Docker Compose-managed Nginx service running on atlas. The service exposes port `8080`, serves a custom Cloud Operations Homelab static page, and has been tested from both atlas and the Windows workstation.
 
-atlas now has reusable Bash automation scripts for basic operational tasks, including system health reporting, disk usage checks, memory checks, safe package update assistance, and timestamped backup creation.
-
-Next phase:
-
-Phase 4: Docker Services
+Next phase: monitoring and observability.

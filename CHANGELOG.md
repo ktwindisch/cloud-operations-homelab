@@ -4,6 +4,37 @@ All notable changes to this project will be documented in this file.
 
 This project uses version-style milestones to track progress over time.
 
+## v4.0.0 - Docker Services
+
+### Added
+
+- Installed Docker Engine on atlas.
+- Installed Docker Compose on atlas.
+- Verified Docker with the `hello-world` test container.
+- Added Phase 4 Docker documentation.
+- Added a custom Nginx static page.
+- Added a Docker Compose configuration for the Nginx service.
+- Added Docker Compose operations documentation.
+- Added Docker troubleshooting and cleanup documentation.
+- Added the Phase 4 Docker Services summary.
+
+### Changed
+
+- Updated the Docker service inventory.
+- Updated the Phase 4 plan to reflect completed Docker service work.
+- Updated Docker documentation to reflect the Compose-managed Nginx service.
+
+### Verified
+
+- Verified Docker service status with `systemctl`.
+- Verified Docker commands work without `sudo` for the `kevin` user.
+- Verified Nginx port mapping from atlas port `8080` to container port `80`.
+- Verified local HTTP access from atlas.
+- Verified browser access from the Windows workstation.
+- Verified custom static content served through Nginx.
+- Verified Docker Compose service startup, restart, shutdown, and recovery.
+- Verified safe cleanup of stopped containers without interrupting the running service.
+
 ## [3.0.0] Bash Automation
 
 ### Added

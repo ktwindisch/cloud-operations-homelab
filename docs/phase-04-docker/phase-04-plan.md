@@ -69,6 +69,8 @@ Phase 4 will be complete when:
 
 ## Current Status
 
+Phase 4 technical work is complete.
+
 Docker Engine and Docker Compose have been installed and verified on atlas.
 
 The `hello-world` test container ran successfully.
@@ -83,6 +85,6 @@ Basic Docker Compose operations have been tested, including status checks, logs,
 
 Docker troubleshooting and safe cleanup commands have been tested and documented.
 
-Phase 4 technical work is complete.
+Phase 4 is complete.
 
-Next step: complete the Phase 4 summary, update README and CHANGELOG, and tag the milestone.
+Next phase: monitoring and observability.
