@@ -25,6 +25,7 @@ docker/
 | Custom Nginx static page | Serve a simple homelab web page | Complete |
 | Docker Compose service | Manage the Nginx service using Compose | Complete |
 | Compose operations | Practice service management commands | Complete |
+| Docker troubleshooting and cleanup | Inspect Docker state and clean up safely | Complete |
 
 ## Phase 4 Goals
 
@@ -52,3 +53,5 @@ No persistent Docker services have been deployed yet.
 Docker Compose is now being used to manage the custom Nginx service.
 
 Basic Docker Compose operations have been tested, including restart, shutdown, recovery, logs, and HTTP verification.
+
+Docker troubleshooting and safe cleanup commands have been tested and documented.
