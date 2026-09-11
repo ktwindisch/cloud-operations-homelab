@@ -12,8 +12,8 @@ By the end of this phase, atlas should have a working monitoring stack that can 
 
 | Step | Task | Status |
 |------|------|--------|
-| 5.1 | Create Phase 5 monitoring structure and planning docs | In Progress |
-| 5.2 | Capture current monitoring baseline | Not Started |
+| 5.1 | Create Phase 5 monitoring structure and planning docs | Complete |
+| 5.2 | Capture current monitoring baseline | Complete |
 | 5.3 | Install and verify Node Exporter | Not Started |
 | 5.4 | Install and configure Prometheus | Not Started |
 | 5.5 | Add atlas host metrics as a Prometheus target | Not Started |
@@ -45,6 +45,10 @@ Phase 5 will be considered complete when:
 
 ## Current Status
 
-Phase 5 has started.
+Phase 5 monitoring planning structure has been created.
 
-The first step is to create the monitoring folder structure and planning documentation.
+The current baseline for atlas, SSH, Docker, the Nginx Compose service, HTTP availability, and listening ports has been captured.
+
+No monitoring agents or dashboards have been installed yet.
+
+Next step: install and verify Node Exporter.

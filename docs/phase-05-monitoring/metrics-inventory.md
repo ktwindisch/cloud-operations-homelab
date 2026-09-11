@@ -37,3 +37,11 @@ systemctl status ssh --no-pager
 docker ps
 docker compose ps
 curl -I http://localhost:8080
+
+## Current Status
+
+Metrics have been identified.
+
+A pre-monitoring baseline has been captured for atlas, SSH, Docker, Nginx, container resource usage, and listening ports.
+
+No metrics are being collected by Prometheus yet.
