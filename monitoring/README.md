@@ -10,7 +10,7 @@ The goal is to monitor host health, service availability, Docker behavior, and s
 
 | Component | Purpose | Status |
 |-----------|---------|--------|
-| Node Exporter | Expose Linux host metrics from atlas | Planned |
+| Node Exporter | Expose Linux host metrics from atlas | Complete |
 | Prometheus | Collect and query metrics | Planned |
 | Grafana | Visualize metrics with dashboards | Planned |
 | Docker monitoring | Track container state and service behavior | Planned |
@@ -20,4 +20,9 @@ The goal is to monitor host health, service availability, Docker behavior, and s
 
 Phase 5 monitoring structure has been created.
 
-No monitoring services have been installed yet.
+Node Exporter has been installed and verified on atlas.
+
+Linux host metrics are available at:
+
+```text
+http://localhost:9100/metrics

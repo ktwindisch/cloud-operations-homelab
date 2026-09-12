@@ -10,11 +10,11 @@ The goal is to define what should be measured before installing monitoring tools
 
 | Metric Area | Example Signals | Why It Matters | Status |
 |-------------|----------------|----------------|--------|
-| CPU | Load average, CPU utilization | Shows compute pressure | Planned |
-| Memory | Used, available, cached, swap | Shows memory pressure | Planned |
-| Disk | Filesystem usage and growth | Helps prevent full disk issues | Planned |
-| Network | Interface traffic and reachability | Shows connectivity and traffic patterns | Planned |
-| Uptime | System uptime and reboot behavior | Helps confirm stability | Planned |
+| CPU | Load average, CPU utilization, CPU frequency | Shows compute pressure | Available through Node Exporter |
+| Memory | Used, available, cached, swap | Shows memory pressure | Available through Node Exporter |
+| Disk | Filesystem usage and growth | Helps prevent full disk issues | Available through Node Exporter |
+| Network | Interface traffic and reachability | Shows connectivity and traffic patterns | Available through Node Exporter |
+| Uptime | System boot time and uptime behavior | Helps confirm stability | Available through Node Exporter |
 
 ## Service Metrics
 
@@ -44,4 +44,6 @@ Metrics have been identified.
 
 A pre-monitoring baseline has been captured for atlas, SSH, Docker, Nginx, container resource usage, and listening ports.
 
-No metrics are being collected by Prometheus yet.
+Node Exporter is now exposing Linux host metrics from atlas on port `9100`.
+
+Prometheus is not collecting metrics yet.
