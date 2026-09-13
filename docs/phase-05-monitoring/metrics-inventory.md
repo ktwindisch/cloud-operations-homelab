@@ -44,6 +44,8 @@ Metrics have been identified.
 
 A pre-monitoring baseline has been captured for atlas, SSH, Docker, Nginx, container resource usage, and listening ports.
 
-Node Exporter is now exposing Linux host metrics from atlas on port `9100`.
+Node Exporter is exposing Linux host metrics from atlas on port `9100`.
 
-Prometheus is not collecting metrics yet.
+Prometheus is now scraping Node Exporter and Prometheus itself.
+
+Grafana has not been installed yet.
