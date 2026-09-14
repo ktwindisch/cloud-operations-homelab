@@ -16,7 +16,7 @@ By the end of this phase, atlas should have a working monitoring stack that can 
 | 5.2 | Capture current monitoring baseline | Complete |
 | 5.3 | Install and verify Node Exporter | Complete |
 | 5.4 | Install and configure Prometheus | Complete |
-| 5.5 | Add atlas host metrics as a Prometheus target | Not Started |
+| 5.5 | Query host metrics from Prometheus | Complete |
 | 5.6 | Monitor Docker and Nginx service behavior | Not Started |
 | 5.7 | Install and configure Grafana | Not Started |
 | 5.8 | Create monitoring dashboards | Not Started |
@@ -55,6 +55,8 @@ Prometheus has been installed on atlas and verified on port `9090`.
 
 Prometheus is scraping both itself and Node Exporter successfully.
 
+Prometheus queries have been verified for target health, host identity, uptime, CPU, memory, disk usage, and scrape duration.
+
 Grafana has not been installed yet.
 
-Next step: query host metrics from Prometheus and confirm atlas metrics are usable.
+Next step: monitor Docker and Nginx service behavior.

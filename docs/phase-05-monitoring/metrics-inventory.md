@@ -46,6 +46,8 @@ A pre-monitoring baseline has been captured for atlas, SSH, Docker, Nginx, conta
 
 Node Exporter is exposing Linux host metrics from atlas on port `9100`.
 
-Prometheus is now scraping Node Exporter and Prometheus itself.
+Prometheus is scraping Node Exporter and Prometheus itself.
+
+Prometheus queries have been verified for host identity, uptime, CPU usage, memory usage, disk usage, target health, and scrape duration.
 
 Grafana has not been installed yet.
