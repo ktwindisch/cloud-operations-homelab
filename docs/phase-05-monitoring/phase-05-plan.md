@@ -17,7 +17,7 @@ By the end of this phase, atlas should have a working monitoring stack that can 
 | 5.3 | Install and verify Node Exporter | Complete |
 | 5.4 | Install and configure Prometheus | Complete |
 | 5.5 | Query host metrics from Prometheus | Complete |
-| 5.6 | Monitor Docker and Nginx service behavior | Not Started |
+| 5.6 | Monitor Docker and Nginx service behavior | Complete |
 | 5.7 | Install and configure Grafana | Not Started |
 | 5.8 | Create monitoring dashboards | Not Started |
 | 5.9 | Define healthy, warning, and failure states | Not Started |
@@ -59,4 +59,4 @@ Prometheus queries have been verified for target health, host identity, uptime, 
 
 Grafana has not been installed yet.
 
-Next step: monitor Docker and Nginx service behavior.
+Next step: install and configure Grafana.

@@ -20,9 +20,57 @@ The goal is to define what should be measured before installing monitoring tools
 
 | Service | Example Signals | Why It Matters | Status |
 |---------|----------------|----------------|--------|
-| Nginx | HTTP availability, response status | Confirms web service access | Planned |
-| Docker | Running containers, restarts, resource usage | Confirms container service behavior | Planned |
+| Nginx | HTTP availability, response status | Confirms web service access | Complete |
+| Docker | Running containers, restarts, resource usage | Confirms container service behavior | Complete |
 | SSH | Service active state and reachability | Confirms remote administration access | Planned |
+
+### Docker and Container Metrics
+
+- `container_last_seen`
+- `container_cpu_usage_seconds_total`
+- `container_memory_working_set_bytes`
+- `container_network_receive_bytes_total`
+- `container_network_transmit_bytes_total`
+- `container_fs_reads_bytes_total`
+- `container_fs_writes_bytes_total`
+
+### Nginx HTTP Availability Metrics
+
+- `probe_success`
+- `probe_http_status_code`
+- `probe_duration_seconds`
+
+### Verified PromQL Queries
+
+cAdvisor target health:
+
+```promql
+up{job="cadvisor"}
+```
+
+Nginx container memory:
+
+```promql
+container_memory_working_set_bytes{name="nginx-compose"}
+```
+
+Nginx container CPU:
+
+```promql
+rate(container_cpu_usage_seconds_total{name="nginx-compose",cpu="total"}[5m]) * 100
+```
+
+Nginx HTTP probe success:
+
+```promql
+probe_success{job="blackbox_nginx"}
+```
+
+Nginx HTTP response status:
+
+```promql
+probe_http_status_code{job="blackbox_nginx"}
+```
 
 ## Baseline Commands
 

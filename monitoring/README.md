@@ -13,8 +13,8 @@ The goal is to monitor host health, service availability, Docker behavior, and s
 | Node Exporter | Expose Linux host metrics from atlas | Complete |
 | Prometheus | Collect and query metrics | Complete |
 | Grafana | Visualize metrics with dashboards | Planned |
-| Docker monitoring | Track container state and service behavior | Planned |
-| Nginx service checks | Verify web service availability | Planned |
+| Docker monitoring | Track container state and service behavior | Complete |
+| Nginx service checks | Verify web service availability | Complete |
 
 ## Current Status
 
@@ -24,9 +24,19 @@ Node Exporter has been installed and verified on atlas.
 
 Prometheus has been installed and verified on atlas.
 
-Prometheus is collecting metrics from Node Exporter and from Prometheus itself.
+Prometheus is collecting metrics from Node Exporter, Prometheus, and cAdvisor.
 
-Linux host metrics are available through Node Exporter at:
+cAdvisor is collecting Docker container metrics for the Nginx service.
 
-```text
-http://localhost:9100/metrics
+Blackbox Exporter is probing Nginx HTTP availability.
+
+Verified service monitoring includes:
+
+- Nginx container CPU and memory metrics
+- Docker container visibility through cAdvisor
+- Nginx HTTP probe success
+- Nginx HTTP 200 response status
+
+Phase 5.6 is complete.
+
+Next step: install and configure Grafana.
