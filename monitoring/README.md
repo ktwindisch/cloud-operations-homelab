@@ -43,6 +43,17 @@ Grafana is connected to Prometheus as its data source.
 
 Grafana Explore successfully returned metrics from Node Exporter, cAdvisor, Blackbox Exporter, and Prometheus.
 
-Phase 5.7 is complete.
+Two Grafana dashboards have been created and verified:
 
-Next step: create monitoring dashboards in Grafana.
+- Atlas Host Overview
+- Docker and Nginx Service Overview
+
+The dashboard definitions were exported as JSON and stored under:
+
+```text
+monitoring/grafana/dashboards/
+```
+
+Phase 5.8 is complete.
+
+Next step: define healthy, warning, and failure states.
