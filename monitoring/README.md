@@ -54,6 +54,12 @@ The dashboard definitions were exported as JSON and stored under:
 monitoring/grafana/dashboards/
 ```
 
-Phase 5.8 is complete.
+Healthy, warning, and critical dashboard states have been defined for host and service metrics.
 
-Next step: define healthy, warning, and failure states.
+CPU, memory, disk usage, container freshness, HTTP availability, HTTP response status, and probe duration now have operational context in Grafana.
+
+System uptime and Nginx container memory remain informational because meaningful failure thresholds have not been established for those metrics.
+
+Phase 5.9 is complete.
+
+Next step: update README, CHANGELOG, final summary, and tag `v5.0.0`.

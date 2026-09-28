@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "adf6k6n",
-    "generation": 8,
+    "generation": 12,
     "creationTimestamp": "2026-09-21T16:35:00Z",
     "labels": {},
     "annotations": {}
@@ -105,7 +105,11 @@
                         "color": "green"
                       },
                       {
-                        "value": 80,
+                        "value": 70,
+                        "color": "#EAB839"
+                      },
+                      {
+                        "value": 85,
                         "color": "red"
                       }
                     ]
@@ -193,7 +197,11 @@
                         "color": "green"
                       },
                       {
-                        "value": 80,
+                        "value": 70,
+                        "color": "#EAB839"
+                      },
+                      {
+                        "value": 85,
                         "color": "red"
                       }
                     ]
@@ -280,7 +288,11 @@
                         "color": "green"
                       },
                       {
-                        "value": 80,
+                        "value": 70,
+                        "color": "#EAB839"
+                      },
+                      {
+                        "value": 85,
                         "color": "red"
                       }
                     ]
@@ -434,6 +446,23 @@
               },
               "fieldConfig": {
                 "defaults": {
+                  "mappings": [
+                    {
+                      "type": "value",
+                      "options": {
+                        "0": {
+                          "text": "DOWN",
+                          "color": "red",
+                          "index": 1
+                        },
+                        "1": {
+                          "text": "UP",
+                          "color": "green",
+                          "index": 0
+                        }
+                      }
+                    }
+                  ],
                   "thresholds": {
                     "mode": "absolute",
                     "steps": [
