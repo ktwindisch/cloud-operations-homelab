@@ -1,8 +1,8 @@
 # Cloud Operations Homelab
 
 **Status:** Active
-**Current Phase:** Phase 4 Complete: Docker Services  
-**Next Phase:** Phase 5: Monitoring and Observability
+**Current Phase:** Phase 5 Complete: Monitoring and Observability
+**Next Phase:** Phase 6: Terraform and AWS
 **Primary Hardware:** Lenovo ThinkPad T530
 **Primary Goal:** Build a production-inspired Linux server environment for Cloud and DevOps engineering practice.
 
@@ -55,7 +55,7 @@ The main objectives of this project are to:
 | Memory | 16 GB RAM |
 | Storage | 238 GB SSD |
 | Network | Wi-Fi |
-| Planned OS | Ubuntu Server |
+| Operating System | Ubuntu Server 26.04 LTS |
 | Administration | Remote SSH only |
 
 ## Planned Architecture
@@ -83,9 +83,8 @@ As the project grows, the architecture will expand to include Docker, monitoring
 | Phase 2 | SSH Remote Administration | Complete |
 | Phase 3 | Bash Automation | Complete |
 | Phase 4 | Docker Services | Complete |
-| Phase 5 | Monitoring and Observability | Next |
-| Phase 6 | Terraform and AWS | Not Started |
-| Phase 7 | GitHub Actions CI/CD | Not Started |
+| Phase 5 | Monitoring and Observability | Complete |
+| Phase 6 | Terraform and AWS | Next |
 | Phase 8 | Ansible Configuration Management | Not Started |
 | Phase 9 | Kubernetes Expansion | Future |
 
@@ -97,10 +96,16 @@ As the project grows, the architecture will expand to include Docker, monitoring
 | Operating System | Ubuntu Server 26.04 LTS |
 | Access Method | SSH from Windows workstation |
 | Primary User | kevin |
-| Initial IPv4 Address | 192.168.1.191 |
+| IPv4 Address | 192.168.1.191 |
 | SSH Status | Active and verified |
-| System Updates | Completed |
-| Current Milestone | Phase 1 Complete |
+| Docker Service | Nginx managed with Docker Compose |
+| Nginx Port | 8080 |
+| Node Exporter | Active on port 9100 |
+| Prometheus | Active on port 9090 |
+| cAdvisor | Active on port 8081 |
+| Blackbox Exporter | Active on port 9115 |
+| Grafana | Active on port 3000 |
+| Current Milestone | Phase 5 Complete |
 
 ## Repository Structure
 
@@ -120,11 +125,28 @@ cloud-operations-homelab/
 │   ├── memory-check.sh
 │   ├── system-update.sh
 │   └── backup-home.sh
+├── docker/
+│   ├── README.md
+│   └── nginx/
+│       ├── docker-compose.yml
+│       └── html/
+├── monitoring/
+│   ├── README.md
+│   ├── prometheus/
+│   │   └── prometheus.yml
+│   ├── blackbox/
+│   │   └── blackbox.yml
+│   └── grafana/
+│       └── dashboards/
+│           ├── atlas-host-overview.json
+│           └── docker-nginx-service-overview.json
 ├── docs/
 │   ├── phase-00-planning/
 │   ├── phase-01-linux-foundation/
 │   ├── phase-02-ssh/
-│   └── phase-03-bash/
+│   ├── phase-03-bash/
+│   ├── phase-04-docker/
+│   └── phase-05-monitoring/
 ├── screenshots/
 └── assets/
 ```
@@ -166,6 +188,30 @@ Project documentation is organized by phase.
 - Backup script
 - Phase 3 summary
 
+### Phase 4: Docker Services
+
+- Docker Engine installation
+- Docker Compose configuration
+- Nginx container deployment
+- Custom static web page
+- Container lifecycle operations
+- Docker troubleshooting and cleanup
+- Phase 4 summary
+
+### Phase 5: Monitoring and Observability
+
+- Monitoring baseline
+- Node Exporter installation
+- Prometheus installation and configuration
+- PromQL query verification
+- Docker monitoring with cAdvisor
+- Nginx HTTP monitoring with Blackbox Exporter
+- Grafana installation and Prometheus integration
+- Atlas Host Overview dashboard
+- Docker and Nginx Service Overview dashboard
+- Healthy, warning, and critical monitoring states
+- Phase 5 summary
+
 ## Documentation Philosophy
 
 This repository documents more than finished results.
@@ -185,8 +231,19 @@ The goal is not to appear perfect. The goal is to demonstrate growth as an engin
 
 ## Current Project Status
 
-Phase 4: Docker Services is complete.
+Phase 5: Monitoring and Observability is complete.
 
-The homelab now includes a Docker Compose-managed Nginx service running on atlas. The service exposes port `8080`, serves a custom Cloud Operations Homelab static page, and has been tested from both atlas and the Windows workstation.
+The homelab now includes a monitoring stack built with Node Exporter, Prometheus, cAdvisor, Blackbox Exporter, and Grafana.
 
-Next phase: monitoring and observability.
+Linux host health, Docker container behavior, and Nginx HTTP availability are monitored through Prometheus and visualized in Grafana.
+
+Two dashboards provide separate operational views:
+
+- Atlas Host Overview
+- Docker and Nginx Service Overview
+
+Healthy, warning, and critical dashboard states have been defined where meaningful, and both dashboard definitions are stored in version control as JSON.
+
+Current release milestone: `v5.0.0`
+
+Next phase: Terraform and AWS.

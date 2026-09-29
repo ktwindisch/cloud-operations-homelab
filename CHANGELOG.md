@@ -4,6 +4,54 @@ All notable changes to this project will be documented in this file.
 
 This project uses version-style milestones to track progress over time.
 
+## v5.0.0 - Monitoring and Observability
+
+### Added
+
+- Installed Node Exporter for Linux host metrics.
+- Installed and configured Prometheus.
+- Added Prometheus scrape targets for Node Exporter, cAdvisor, and Blackbox Exporter.
+- Added cAdvisor for Docker container monitoring.
+- Added Blackbox Exporter for Nginx HTTP availability monitoring.
+- Installed and configured Grafana.
+- Connected Grafana to Prometheus.
+- Created the Atlas Host Overview dashboard.
+- Created the Docker and Nginx Service Overview dashboard.
+- Exported both Grafana dashboards as JSON for version control and reuse.
+- Added monitoring health threshold documentation.
+- Added the Phase 5 Monitoring and Observability summary.
+
+### Changed
+
+- Extended the Docker Compose configuration with cAdvisor.
+- Extended Prometheus configuration with container and HTTP service monitoring.
+- Updated monitoring documentation to reflect the completed observability stack.
+- Added healthy, warning, and critical dashboard states.
+- Updated Grafana dashboard exports after threshold and value mapping changes.
+
+### Verified
+
+- Verified Node Exporter metrics from atlas.
+- Verified Prometheus and Node Exporter targets are healthy.
+- Verified host CPU, memory, disk, uptime, and scrape metrics through PromQL.
+- Verified cAdvisor detects the `nginx-compose` container.
+- Verified Prometheus collects Nginx container CPU and memory metrics.
+- Verified Blackbox Exporter reports `probe_success = 1`.
+- Verified Nginx returns HTTP status `200`.
+- Verified Grafana can query Prometheus through Explore.
+- Verified Atlas Host Overview displays live host metrics.
+- Verified Docker and Nginx Service Overview displays live container and HTTP metrics.
+- Verified monitoring targets display healthy status.
+- Verified dashboard health thresholds and value mappings.
+
+### Notes
+
+Phase 5 moves the homelab from manually checking system state to a centralized monitoring and observability model.
+
+The project can now collect, query, visualize, and interpret Linux host health, Docker container behavior, and Nginx HTTP availability.
+
+Next phase: Terraform and AWS.
+
 ## v4.0.0 - Docker Services
 
 ### Added
