@@ -25,7 +25,7 @@ AWS billing will be checked during the phase to confirm that the project remains
 | Step | Task | Status |
 |------|------|--------|
 | 6.1 | Create Phase 6 structure and zero-cost guardrails | Complete |
-| 6.2 | Install and verify Terraform and AWS CLI | Not Started |
+| 6.2 | Install and verify Terraform and AWS CLI | Complete |
 | 6.3 | Configure AWS authentication securely | Not Started |
 | 6.4 | Create the Terraform project foundation | Not Started |
 | 6.5 | Design AWS networking and verify resource pricing | Not Started |
@@ -45,4 +45,4 @@ terraform plan
 terraform apply
 terraform destroy
 
-Next step: install and verify Terraform and AWS CLI.
+Next step: configure AWS authentication securely.
