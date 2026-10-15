@@ -144,6 +144,42 @@ The root account is no longer required for normal project administration.
 
 Long-lived AWS access keys are not being used.
 
+## Default AWS CLI Profile
+
+Git Bash was configured to use the `homelab-admin` profile automatically.
+
+The following environment variable was added to `~/.bashrc`:
+
+```text
+export AWS_PROFILE=homelab-admin
+```
+
+After reloading the shell configuration, new Git Bash sessions automatically use the `homelab-admin` AWS CLI profile.
+
+This allows the Identity Center session to be started with:
+
+```text
+aws sso login
+```
+
+instead of repeatedly specifying:
+
+```text
+--profile homelab-admin
+```
+
+The active AWS profile can be verified with:
+
+```text
+echo $AWS_PROFILE
+```
+
+Expected result:
+
+```text
+homelab-admin
+```
+
 ## Result
 
 Secure AWS CLI authentication through IAM Identity Center is operational.
