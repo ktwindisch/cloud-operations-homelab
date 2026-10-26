@@ -28,8 +28,8 @@ AWS billing will be checked during the phase to confirm that the project remains
 | 6.2 | Install and verify Terraform and AWS CLI | Complete |
 | 6.3 | Configure AWS authentication securely | Complete |
 | 6.4 | Create the Terraform project foundation | Complete |
-| 6.5 | Design AWS networking and verify resource pricing | Not Started |
-| 6.6 | Apply only infrastructure verified to cost $0 | Not Started |
+| 6.5 | Design AWS networking and verify resource pricing | Complete |
+| 6.6 | Apply only infrastructure verified to cost $0 | Complete |
 | 6.7 | Build and validate plan-only configurations for chargeable infrastructure | Not Started |
 | 6.8 | Destroy applied infrastructure and verify billing | Not Started |
 | 6.9 | Compare AWS infrastructure design with atlas | Not Started |
@@ -45,4 +45,4 @@ terraform plan
 terraform apply
 terraform destroy
 
-Next step: design AWS networking and verify resource pricing.
+Next step: build and validate plan-only configurations for chargeable infrastructure.

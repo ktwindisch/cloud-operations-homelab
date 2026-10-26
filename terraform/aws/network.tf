@@ -1,0 +1,46 @@
+resource "aws_vpc" "homelab" {
+  cidr_block           = "10.20.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+
+  tags = {
+    Name = "cloud-operations-homelab"
+  }
+}
+
+resource "aws_subnet" "public" {
+  vpc_id                  = aws_vpc.homelab.id
+  cidr_block              = "10.20.1.0/24"
+  availability_zone       = data.aws_availability_zones.available.names[0]
+  map_public_ip_on_launch = false
+
+  tags = {
+    Name = "homelab-public-subnet"
+  }
+}
+
+resource "aws_internet_gateway" "homelab" {
+  vpc_id = aws_vpc.homelab.id
+
+  tags = {
+    Name = "homelab-igw"
+  }
+}
+
+resource "aws_route_table" "public" {
+  vpc_id = aws_vpc.homelab.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.homelab.id
+  }
+
+  tags = {
+    Name = "homelab-public-route-table"
+  }
+}
+
+resource "aws_route_table_association" "public" {
+  subnet_id      = aws_subnet.public.id
+  route_table_id = aws_route_table.public.id
+}
